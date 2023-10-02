@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --my-primary: #23c999;
+    --my-footer: #3a546d;
+}
+#hero img{
+    width: 250px;
+}
+.bg-my-section{
+    background-color:  var(--my-primary);
+}
+.bg-my-footer{
+    background-color: var(--my-footer);
+}
+#portfolio img{
+    width: 100%;
+    display: block;
+}
+.my-image-container{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.my-image-container:hover::after{
+    content: '+';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2bad887c;
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+}
+.my-star{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.my-star::before, .my-star::after{
+    content: '';
+    display: block;
+    width: 15%;
+    height: 3px;
+    background-color: white;
+}
